@@ -6,7 +6,7 @@ import { AnimatePresence } from "motion/react";
 import GameWinCelebration from "@/components/GameWinCelebration";
 
 const HomeView = () => {
-    const [isStarted, setisStarted] = useState(true)
+    const [isStarted, setisStarted] = useState(false)
     const [whoseTurn, setwhoseTurn] = useState("X")
     const [board, setBoard] = useState([
         ["", "", ""],
@@ -119,9 +119,6 @@ const HomeView = () => {
         setisOExiting([]);
         setwinningLine([]);
         setwinnerPlayer("");
-        setTimeout(() => {
-            setisStarted(true);
-        }, 500);
     };
 
     return (

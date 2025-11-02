@@ -63,12 +63,13 @@ const GameWinCelebration: React.FC<GameWinCelebrationProps> = ({ winner, resetGa
         }
 
         .modal {
-          background-color: #111;
+          background-color: #11111110;
           padding: 30px 40px;
           border-radius: 10px;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
           text-align: center;
           max-width: 90%;
+          backdrop-filter: blur(1px)
         }
 
         .modal h2 {
